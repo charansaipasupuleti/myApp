@@ -40,10 +40,10 @@ export class CreateTemplateComponent {
           children: [
             { label: 'm1', children: [{ label: 'us' }] },
             { label: 'm2', children: [{ label: '23-qos' }, { label: '27-clin-sum' }] },
-            { label: 'm3' },
-            { label: 'm4' },
-            { label: 'm5' },
-            { label: 'util' }
+            { label: 'm3', expanded: false, children: [] },
+            { label: 'm4' , expanded: false, children: []},
+            { label: 'm5' , expanded: false, children: []},
+            { label: 'util', expanded: false, children: [] }
           ]
         }
       ]
