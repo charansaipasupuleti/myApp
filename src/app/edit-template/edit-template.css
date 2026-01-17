@@ -221,9 +221,6 @@
     font-size: 13px;
     color: #333;
 }
-tr:hover{
-cursor:pointer;
-}
 
 .actions {
     display: flex;

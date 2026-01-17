@@ -45,4 +45,7 @@ export class Dashboard{
     moveToLogin(){
         this.router.navigate(['']);
     }
+    editTemplate(){
+        this.router.navigate(['/edit-template']);
+    }
 }
