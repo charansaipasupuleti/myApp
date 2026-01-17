@@ -43,7 +43,7 @@
                
                 </div>
                 <ul class="nav-links" *ngIf="isConfigOpen">
-                    <li class="active-sub">Templates</li>
+                    <li class="active-sub" (click)="goToDashboard()">Templates</li>
                 </ul>
                 <div class="menu-group" [class.open]="isDocPrepOpen"></div>
                  <div class="menu-item active" (click)="toggleDocPrep()">

@@ -48,4 +48,7 @@ export class Dashboard{
     editTemplate(){
         this.router.navigate(['/edit-template']);
     }
+    goToDashboard(){
+         this.router.navigate(['/dashboard']);
+    }
 }

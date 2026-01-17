@@ -42,4 +42,7 @@ export class EditTemplate {
     this.isGeneralOpen = false;
         this.isVarOpen = false;
     }
+    goToDashboard(){
+         this.router.navigate(['/dashboard']);
+    }
 }
