@@ -130,111 +130,23 @@
 }
 
 .content {
-    flex: 1;
-    padding: 25px;
-    background-color:  #f4f7f9;
-    overflow-y: auto;
+   border:1px solid black;
+   margin:20px;
+   width:100%;
+   height:auto;
    
 }
 
-.content-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
 
-.content-header h2 {
-    color: #444;
-    font-size: 20px;
-}
 
-.btn-create {
-    background-color:  #d97742;
-    color: white;
-    border: none;
-    padding: 8px 18px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-}
 
-.filter-bar {
-    display: flex;
-    gap: 20px;
-    background: white;
-    padding: 15px;
-    border-radius: 4px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    margin-bottom: 25px;
-    align-items: flex-end;
-}
 
-.filter-group {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
 
-.filter-group label {
-    font-size: 12px;
-    color: #888;
-}
 
-.filter-group input, .filter-group select {
-    padding: 7px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    width: 180px;
-}
 
-.btn-search {
-    background-color:  #d97742;
-    color: white;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-}
 
-.data-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-}
 
-.data-table th {
-    background-color: #e9f1f7;
-    padding: 12px;
-    text-align: left;
-    border: 1px solid #e0e6ed;
-    color: #556b82;
-    font-size: 13px;
-}
 
-.data-table td {
-    padding: 12px;
-    border: 1px solid #e0e6ed;
-    font-size: 13px;
-    color: #333;
-}
-
-.actions {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    color: #666;
-}
-.active-sub {
-    background-color:#d97742!important;
-    color: white !important;
-    font-weight: bold;
-}
-.fa-pencil:hover { color: #2196F3; cursor: pointer; }
-.fa-trash:hover { color: #F44336; cursor: pointer; }
 
 @media screen and (max-width: 390px) {
     .top-nav {
