@@ -81,3 +81,43 @@
    
 }
  }
+ .tree-list {
+  list-style: none;
+  padding-left: 20px;
+  position: relative;
+}
+
+.tree-list ul::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: 1px;
+  height: 100%;
+  background: #ccc; 
+}
+.tree-node {
+  padding: 5px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tree-node i {
+  color: #9dbce8; 
+  }
+
+.tree-list li {
+  position: relative;
+}
+
+.tree-list li::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -12px;
+  width: 12px;
+  height: 1px;
+  background: #ccc;
+}

@@ -7,23 +7,50 @@
     <div class="form-row">
       <div class="input-group">
         <label>Name</label>
-        <input type="text" value="UK-MHRA-01" class="custom-input">
+     
+         <input type="text" [(ngModel)]="templateName" class="custom-input">
       </div>
       <div class="input-group">
         <label>Region</label>
         <div class="select-wrapper">
-          <select class="custom-input">
+       
+            <select class="custom-input" [(ngModel)]="region">
             <option>UK</option>
           </select>
         </div>
       </div>
-      <button class="btn-outline-orange">+ Create Structure</button>
+     
+       <button class="btn-outline-orange" (click)="onCreateStructure()">+ Create Structure</button>
     </div>
+    <div class="content-area">
+      <div class="upload-view" *ngIf="!showStructure">
+        <div class="drag-drop-zone">
+      
+        </div>
+      </div>
 
+      <div class="tree-view" *ngIf="showStructure">
+        <ng-container *ngTemplateOutlet="recursiveTree; context: { $implicit: treeData }"></ng-container>
+       
+      </div>
+    </div> 
   </mat-dialog-content>
   <mat-dialog-actions class="modal-footer">
-    <button class="btn-action modify"><i class="fa fa-pencil-square-o"></i> Modify Template</button>
-    <button class="btn-action save"><i class="fa fa-check"></i> Save</button>
+    <button class="btn-action modify" (click)="onModify()"><i class="fa fa-pencil-square-o"></i> Modify Template</button>
+    <button class="btn-action save" (click)="onSave()"><i class="fa fa-check"></i> Save</button>
     <button class="btn-action cancel" mat-dialog-close><i class="fa fa-times"></i> Cancel</button>
   </mat-dialog-actions>
 </div>
+<ng-template #recursiveTree let-list>
+  <ul class="tree-list">
+    <li *ngFor="let item of list">
+      <div class="tree-node" (click)="item.expanded = !item.expanded">
+        <i class="fa" [ngClass]="item.children ? (item.expanded ? 'fa-folder-open' : 'fa-folder') : 'fa-file-text-o'"></i>
+        {{ item.label }}
+      </div>
+      <ul *ngIf="item.children && item.expanded">
+        <ng-container *ngTemplateOutlet="recursiveTree; context: { $implicit: item.children }"></ng-container>
+      </ul>
+    </li>
+  </ul>
+</ng-template>
