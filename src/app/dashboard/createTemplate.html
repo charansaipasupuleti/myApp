@@ -1,0 +1,29 @@
+<div class="modal-wrapper">
+  <div class="modal-header">
+    <h2 mat-dialog-title>Create Template</h2>
+  </div>
+
+  <mat-dialog-content class="modal-body">
+    <div class="form-row">
+      <div class="input-group">
+        <label>Name</label>
+        <input type="text" value="UK-MHRA-01" class="custom-input">
+      </div>
+      <div class="input-group">
+        <label>Region</label>
+        <div class="select-wrapper">
+          <select class="custom-input">
+            <option>UK</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn-outline-orange">+ Create Structure</button>
+    </div>
+
+  </mat-dialog-content>
+  <mat-dialog-actions class="modal-footer">
+    <button class="btn-action modify"><i class="fa fa-pencil-square-o"></i> Modify Template</button>
+    <button class="btn-action save"><i class="fa fa-check"></i> Save</button>
+    <button class="btn-action cancel" mat-dialog-close><i class="fa fa-times"></i> Cancel</button>
+  </mat-dialog-actions>
+</div>
