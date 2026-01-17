@@ -173,6 +173,7 @@ font-weight: bold;
 }
 .genlist,.varlist,.commentslist {
     background-color:white;
+    width:33%;
 }
 .genlist p{
     display:flex;
