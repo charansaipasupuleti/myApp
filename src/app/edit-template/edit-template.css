@@ -146,8 +146,15 @@ border-bottom:1px solid #F2F3F2;
 height:50px;
 margin-left:10px;
 padding:5px;
-font-size: medium;
-font-weight: bold;
+display: flex;
+}
+.content1 h4{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.content1 i{
+    margin-top:15px;
+    
 }
 .content2{
     display: flex;
@@ -187,7 +194,7 @@ font-weight: bold;
     
    
 }
-.sidepanel1>ul{
+.sidepanel1 ul{
     display:flex;
     flex-wrap: wrap;
     
