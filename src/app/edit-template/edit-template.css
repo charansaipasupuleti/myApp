@@ -142,8 +142,37 @@ width:100vw;
     height:85vh;
      box-shadow: 0px 0px 5px #888;
 }
+.content1{
+border-bottom:1px solid #F2F3F2;
+height:50px;
+margin-left:10px;
+padding:5px;
+font-size: medium;
+font-weight: bold;
+}
+.content2{
+    display: flex;
+    
+    
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: white;
 
-
+}
+.sidepanel1,.sidepanel2{
+    border:1px solid #F2F3F2;
+    width:50%;
+    height:75vh;
+   
+}
+.genlist,.varlist,.commentslist {
+    background-color:white;
+}
 
 
 

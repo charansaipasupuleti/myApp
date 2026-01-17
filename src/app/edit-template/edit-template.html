@@ -60,7 +60,44 @@
 
             <main class="content-wrapper">
                 <div class="content">
-                    
+                    <div class="content1">USA-ESHI</div>
+                    <div class="content2">
+                    <div class="sidepanel1">
+                            <div class="menu-group" [class.open]="isGeneralOpen"></div>
+                            <div class="item"  (click)="toggleGeneral()">
+                                <span>general info</span>
+                                        <i class="fa" [ngClass]="isGeneralOpen ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+                        
+                            </div>
+                            <ul class="nav-links" *ngIf="isGeneralOpen">
+                                <li class="genlist">Name : 1-2-cover letter</li>
+                                <li class="genlist">created on :27-12-2023 19:38 UTC</li>
+                                <li class="genlist">Status : Approved</li>
+                                <li class="genlist">Version : 1.0</li>
+                            </ul>
+                                
+                                <div class="menu-group" [class.open]="isVarOpen"></div>
+                                <div class="item"  (click)="toggleVar()">
+                                    <span>Variables</span>
+                                    <i class="fa" [ngClass]="isVarOpen ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+                                </div>
+                                <ul class="nav-links" *ngIf="isVarOpen">
+                                    <li class="varlist">Variables List</li>
+                                </ul>
+                                <div class="menu-group" [class.open]="isCommentsOpen"></div>
+                                <div class="item"  (click)="toggleComments()">
+                                    <span>Comments</span>
+                                    <i class="fa" [ngClass]="isCommentsOpen ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+                                </div>
+                                <ul class="nav-links" *ngIf="isCommentsOpen">
+                                    <li class="commentslist">Comments List</li>
+                                </ul>
+                    </div>
+                    <div class="sidepanel2">
+                     <div><input type="search" placeholder="search"></div>
+                     <div></div>
+                    </div>
+                    </div>
                 </div>
             </main>
         </div>

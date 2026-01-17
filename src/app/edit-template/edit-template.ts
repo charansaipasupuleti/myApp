@@ -13,7 +13,11 @@ export class EditTemplate {
   
     isConfigOpen: boolean = false;
     isDocPrepOpen: boolean = false;
+    isGeneralOpen:boolean = false;
+    isVarOpen:boolean = false;
+    isCommentsOpen:boolean = false;
 
+    
      toggleConfig() {
     this.isConfigOpen = !this.isConfigOpen;
     }
@@ -23,5 +27,13 @@ export class EditTemplate {
     moveToLogin(){
         this.router.navigate(['']);
     }
-  
+       toggleGeneral() {
+    this.isGeneralOpen = !this.isGeneralOpen;
+    }
+     toggleVar() {
+    this.isVarOpen = !this.isVarOpen;
+    }
+     toggleComments() {
+    this.isCommentsOpen = !this.isCommentsOpen;
+    }
 }
