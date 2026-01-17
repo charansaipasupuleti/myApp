@@ -65,22 +65,22 @@
                     <div class="sidepanel1">
                             <div class="menu-group" [class.open]="isGeneralOpen"></div>
                             <div class="item"  (click)="toggleGeneral()">
-                                <span>general info</span>
+                                <span>General Info</span>
                                         <i class="fa" [ngClass]="isGeneralOpen ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
                         
                             </div>
                             <ul class="nav-links" *ngIf="isGeneralOpen">
-                                <li class="genlist"><p>Name</p><p>1-2-cover letter</p></li>
-                                <li class="genlist"><p>Created By </p><p>Paul</p></li>
-                                <li class="genlist"><p>Created on</p><p>27-12-2023 19:38 UTC</p></li>
-                                 <li class="genlist"><p>Created on</p ><p>27-12-2023 19:38 UTC</p></li>
-                                  <li class="genlist"><p>Version </p> <p>1.0</p></li>
-                                   <li class="genlist"><p>Life Cycle </p><p> General</p></li>
-                                <li class="genlist"><p>Status</p> <p>Approved</p></li>
-                                <li class="genlist"><p>Language</p><p>English</p></li>
-                                 <li class="genlist"><p>Ready For Publishing</p> <p>Yes</p></li>
-                                  <li class="genlist"><p>Book Marks Edited</p><p> Yes</p></li>
-                                   <li class="genlist"><p>Tags</p> <p> -</p></li>
+                                <li class="genlist"><p><b>Name</b></p><p>1-2-cover letter</p></li>
+                                <li class="genlist"><p><b>Created By </b></p><p>Paul</p></li>
+                                <li class="genlist"><p><b>Created on</b></p><p>27-12-2023 19:38 UTC</p></li>
+                                 <li class="genlist"><p><b>Created on</b></p ><p>27-12-2023 19:38 UTC</p></li>
+                                  <li class="genlist"><p><b>Version </b></p> <p>1.0</p></li>
+                                   <li class="genlist"><p><b>Life Cycle </b></p><p> General</p></li>
+                                <li class="genlist"><p><b>Status</b></p> <p>Approved</p></li>
+                                <li class="genlist"><p><b>Language</b></p><p>English</p></li>
+                                 <li class="genlist"><p><b>Ready For Publishing</b></p> <p>Yes</p></li>
+                                  <li class="genlist"><p><b>Book Marks Edited</b></p><p> Yes</p></li>
+                                   <li class="genlist"><p><b>Tags</b></p> <p> -</p></li>
                             </ul>
                                 
                                 <div class="menu-group" [class.open]="isVarOpen"></div>
@@ -99,6 +99,9 @@
                                 <ul class="nav-links" *ngIf="isCommentsOpen">
                                     <li class="commentslist">Comments List</li>
                                 </ul>
+                                <div class="foot">
+                                <button class="save"><i class="fa fa-check"></i>Save</button>
+                                <button class="cancel"><i class="fa fa-times"></i>Cancel</button></div>
                     </div>
                     <div class="sidepanel2">
                      <div class="searchbar"><i class="fa fa-search"></i><input type="search" placeholder="search"></div>

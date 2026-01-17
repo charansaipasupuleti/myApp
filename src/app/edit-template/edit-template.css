@@ -165,10 +165,16 @@ font-weight: bold;
  border-top: 1px solid #F2F3F2;
  border-collapse: collapse;
 }
-.sidepanel1,.sidepanel2{
+.sidepanel1{
     border:1px solid #F2F3F2;
-    width:50%;
+    width:45%;
     height:75vh;
+  ;
+}
+.sidepanel2{
+    border:1px solid #F2F3F2;
+    width:55%;
+    max-height:75vh;
    
 }
 .genlist,.varlist,.commentslist {
@@ -177,13 +183,37 @@ font-weight: bold;
 }
 .genlist p{
     display:flex;
-    flex-direction: column;
-    font-size: small;
+    font-size:small;
+    
+   
 }
 .sidepanel1>ul{
     display:flex;
     flex-wrap: wrap;
+    
 
+}
+.foot{
+    position:absolute;
+    bottom:45px;
+    margin-left:25vw;
+}
+.save{
+    background-color: #d97742;
+    border-style: none;
+    height:30px;
+    width:60px;
+    color:white;
+}
+.cancel{
+    
+    border-style: none;
+    height:30px;
+    width:60px;
+}
+.save,.cancel{
+margin:5px;
+border-radius :4px;
 }
 .searchbar{
     height:40px;

@@ -13,7 +13,7 @@ export class EditTemplate {
   
     isConfigOpen: boolean = false;
     isDocPrepOpen: boolean = false;
-    isGeneralOpen:boolean = false;
+    isGeneralOpen:boolean = true;
     isVarOpen:boolean = false;
     isCommentsOpen:boolean = false;
 
@@ -29,11 +29,17 @@ export class EditTemplate {
     }
        toggleGeneral() {
     this.isGeneralOpen = !this.isGeneralOpen;
+    this.isVarOpen = false;
+    this.isCommentsOpen = false;
     }
      toggleVar() {
     this.isVarOpen = !this.isVarOpen;
+    this.isGeneralOpen = false;
+    this.isCommentsOpen = false;
     }
      toggleComments() {
     this.isCommentsOpen = !this.isCommentsOpen;
+    this.isGeneralOpen = false;
+        this.isVarOpen = false;
     }
 }
