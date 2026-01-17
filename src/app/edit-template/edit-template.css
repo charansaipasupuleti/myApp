@@ -135,9 +135,13 @@
 }
 .filter-group input,select{
     margin-top:10px;
-    width:120px;
+    width:100px;
     height:40px;
 
+}
+.filter-group img{
+    margin-top:40px;
+    margin-left:10px;
 }
 .content-wrapper {
 background-color:#F2F3F2;
