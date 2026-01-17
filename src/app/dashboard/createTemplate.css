@@ -1,19 +1,23 @@
 .modal-wrapper{
     height: 70vh;
+        background-color: white;
 }
 
 .modal-header {
     border-bottom: 1px solid #eee;
+      
 }
 
 .modal-header h2 { 
     margin: 0;
      font-size: 18px;
       color: #333;
+  
      }
 
 .modal-body { 
     padding: 25px; 
+   
 }
 
 .form-row {
@@ -54,6 +58,7 @@
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+        background-color: white;
 }
 
 
@@ -120,4 +125,10 @@
   width: 12px;
   height: 1px;
   background: #ccc;
+}
+.gif{
+  height:100px;
+  width:120px;
+ margin-left:200px;
+ margin-top:40px;
 }
