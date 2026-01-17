@@ -1,0 +1,109 @@
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<div class="dashboard-wrapper">
+        <header class="top-nav">
+            <div class="logo-area">
+                <img src="logo.png" alt="logo" class="mini-logo">
+            </div>
+            <div class="stepper">
+                <div class="stepactive">
+                    <div class="line"></div>
+                    <div class="circle">1</div>
+                    <span>Product Info</span>
+                </div>
+                 <div class="line"></div>
+                <div class="step">
+                    <div class="circle">2</div>
+                    <span>Manage Document</span>
+                </div>
+                <div class="line"></div>
+                <div class="step">
+                    <div class="circle">3</div>
+                    <span>eCTD Submission</span>
+                </div>
+                 <div class="line"></div>
+                <div class="step">
+                    <div class="circle">4</div>
+                    <span>Validation</span>
+                </div>
+                <div class="line"></div>
+                <div class="step">
+                    <div class="circle">5</div>
+                    <span>Dispatch</span>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </header>
+        <div class="main-body">
+            <aside class="sidebar">
+                <div class="menu-group" [class.open]="isConfigOpen"></div>
+                <div class="menu-item active"  (click)="toggleConfig()">
+                    <span>Configurations</span>
+                            <i class="fa" [ngClass]="isConfigOpen ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+               
+                </div>
+                <ul class="nav-links" *ngIf="isConfigOpen">
+                    <li class="active-sub">Templates</li>
+                </ul>
+                <div class="menu-group" [class.open]="isDocPrepOpen"></div>
+                 <div class="menu-item active" (click)="toggleDocPrep()">
+                    <span>Document Prep</span>
+                    <i class="fa" [ngClass]="isDocPrepOpen ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+    
+                 </div>
+                 <ul class="nav-links" *ngIf="isDocPrepOpen">
+                    <li class="active-sub">Products</li>
+                         <li class="active-sub">Applications</li>
+                              <li class="active-sub">Sequences</li>
+                </ul>
+            </aside>
+
+            <main class="content">
+                <div class="content-header">
+                    <h2>Templates</h2>
+                    <button class="btn-create">+Create</button>
+                </div>
+                <div class="filter-bar">
+                    <div class="filter-group">
+                        <label>Start Date</label>
+                        <input type="date" value="2020-04-07">
+                    </div>
+                    <div class="filter-group">
+                        <label>End Date</label>
+                        <input type="date" value="2021-04-07">
+                    </div>
+                    <div class="filter-group">
+                        <label>Region</label>
+                        <select>
+                            <option>Select</option>
+                        </select>
+                    </div>
+                    <button class="btn-search"><i class="fa fa-search"></i>Search</button>
+                </div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Template ID</th>
+                             <th>Template Name</th>
+                              <th>Region</th>
+                               <th>Modified By</th>
+                                <th>Modified On</th>
+                                 <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                         <td>T01</td>
+                         <td>US-FDA-01</td>
+                         <td>USA</td>
+                                     <td>CuneSoft Support</td>
+                                     <td>01-01-1970</td>
+                                     <td class="actions">
+                                     <i class="fa fa-pencil"></i>
+                                     <i class="fa fa-trash"></i>
+                                     </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+        </div>
+    </div>
