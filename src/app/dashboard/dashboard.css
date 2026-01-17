@@ -31,6 +31,7 @@
 
 .mini-logo {
     height: 35px;
+    
 }
 
 .stepper {
@@ -52,7 +53,9 @@
 .stepactive {
     opacity: 1;
 }
-
+.complete{
+    border:1px solid green;
+}
 .circle {
     width: 22px;
     height: 22px;

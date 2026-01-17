@@ -10,7 +10,7 @@ width:100%;
 
 }
 .color2{
-    background-color:darkorange;
+    background-color:#CF682F;
     height:10px;
     width:100%;
    
@@ -18,7 +18,7 @@ width:100%;
 
 img{
     margin-top:10vh;
-    margin-left:37vw;
+    margin-left:46vw;
 }
 .div1{
     height:30vh;
@@ -47,7 +47,7 @@ img{
     margin-left:150px; 
     border: 1px solid #ccc;
     border-radius: 8px; 
-    background-color:darkorange;
+    background-color:#CF682F;
     text-align:center;
     color:white;
     font-weight:bold;
