@@ -1,0 +1,175 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+.color1{
+background-color:black;
+height:20px;
+width:100%;
+
+}
+.color2{
+    background-color:#CF682F;
+    height:10px;
+    width:100%;
+   
+}
+
+img{
+    margin-top:10vh;
+    margin-left:46vw;
+}
+.div1{
+    height:30vh;
+    width:60vw;
+    margin-top:10vh;
+    display:flex;
+    justify-self: center;
+    align-items: center; 
+  
+}
+.userName, .password {
+    height:50px;
+    width: 450px;      
+    padding: 10px;   
+    margin-bottom: 15px;
+    margin-left:150px; 
+    border: 1px solid #ccc;
+    border-radius: 8px;    
+    background-color:ghostwhite;
+}
+.login{
+   height:50px;
+    width: 450px;
+    padding: 10px;   
+    margin-bottom: 15px;
+    margin-left:150px; 
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    background-color:#CF682F;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+}
+.frgtpswd{
+    width: 450px;  
+    padding: 10px;   
+    margin-bottom: 15px;
+    margin-left:160px; 
+    text-align:center;
+
+}
+button:hover{
+ cursor:pointer;
+}
+
+.social-icons i{
+    background-color: #d1d8d1;
+    color:white;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 14px;
+
+}
+.social-icons{
+    margin-bottom:15px;
+    display:flex;
+    justify-content: center;
+    gap:15px;
+}
+
+.footer{
+    position:absolute;
+    bottom:20px;
+    margin-left:480px;
+    padding:10px;
+   
+} 
+ .copyright{
+    font-size:12px;
+    color:#888;
+}
+
+a{
+    text-decoration: none;
+}
+a:link{
+    color:#888;
+}
+a:hover {
+  color:#888;
+  cursor:pointer;
+}
+a:visited {
+  color:#888;
+}
+a:active {
+  color:#888;
+}
+.error-box {
+    width:450px;
+     margin-left:150px;
+  background-color: #ffebee; 
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+
+.error-icon {
+  color: #d32f2f; 
+  font-size: 20px;
+}
+
+.error-text {
+  color: #c62828; 
+  font-size: 14px;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width:1024px){
+    .div1,.userName,.password,.frgtpswd,.login,.error-box{
+        width:70%;
+        margin-left:100px;
+
+    }
+       img{
+        height:100px;
+        width:auto;
+        margin-left:380px;
+    }
+    .footer{
+       
+        text-align: center;
+        margin-left: 380px;
+    }
+  
+}
+@media screen and (max-width:390px){
+    .div1,.userName,.password,.login,.frgtpswd,.error-box{
+        width:300px;
+        margin-left:2px;
+   
+    }
+    img{
+        margin-left:130px;
+        height:40px;
+        width:auto;
+    }
+    .footer{
+       
+        text-align: center;
+        margin-left: 35px;
+    }
+
+}

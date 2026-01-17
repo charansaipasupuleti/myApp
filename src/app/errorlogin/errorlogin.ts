@@ -6,19 +6,17 @@ import { Router } from '@angular/router';
   selector: 'login',
   standalone:true,
   imports: [CommonModule],
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  templateUrl: './errorlogin.html',
+  styleUrl: './errorlogin.css'
 })
-export class LoginComponent {
-   
+export class ErrorLoginComponent {
+    showError:boolean=true;
     constructor(private router: Router) {}
 handleLogin(){
-   
         this.router.navigate(['/dashboard']);
     } 
-     handleErrorLogin(){
-        this.router.navigate(['/errorlogin']);
+    handleError(){
+          this.showError = true;
     }
 
 }
- 
