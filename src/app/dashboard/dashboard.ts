@@ -14,7 +14,7 @@ import { CommonModule } from "@angular/common";
 import { CreateTemplateComponent } from "./createTemplate";
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
-
+import { Router } from '@angular/router';
 @Component({
     selector:'app-dashboard',
       standalone: true,
@@ -23,9 +23,9 @@ import { MatButtonModule } from '@angular/material/button';
       styleUrl: './dashboard.css',
 })
 export class Dashboard{
-    constructor(private dialog: MatDialog) {
-
-    }
+    constructor(private dialog: MatDialog,private router: Router) {}
+    
+   
      openCreatePopup() {
     this.dialog.open(CreateTemplateComponent, {
       width: '850px',
@@ -42,5 +42,7 @@ export class Dashboard{
     toggleDocPrep() {
     this.isDocPrepOpen = !this.isDocPrepOpen;
     }
-
+    moveToLogin(){
+        this.router.navigate(['']);
+    }
 }

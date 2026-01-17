@@ -63,7 +63,17 @@
     justify-content: center;
     font-size: 11px;
 }
-
+.user{
+  margin:5px;
+  padding:5px;
+  font-size: small;
+}
+.user:hover{
+    cursor:pointer;
+}
+.logtime{
+      font-size: x-small;
+}
 .stepactive .circle {
     background-color: white;
     color: #d97742;
