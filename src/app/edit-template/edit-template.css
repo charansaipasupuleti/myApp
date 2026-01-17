@@ -91,7 +91,6 @@
 .main-body {
     display: flex;
     flex: 1;
-    /* overflow: hidden; */
 }
 
 .sidebar {
@@ -162,7 +161,9 @@ font-weight: bold;
     font-size: 14px;
     font-weight: 600;
     background-color: white;
-
+    border-bottom: 1px solid #F2F3F2;
+ border-top: 1px solid #F2F3F2;
+ border-collapse: collapse;
 }
 .sidepanel1,.sidepanel2{
     border:1px solid #F2F3F2;
@@ -173,8 +174,21 @@ font-weight: bold;
 .genlist,.varlist,.commentslist {
     background-color:white;
 }
-
-
+.searchbar{
+    height:40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchbar input{
+    width:300px;
+    height:30px;
+}
+.sidepanel2 div{
+      border-bottom: 1px solid #F2F3F2;
+ border-top: 1px solid #F2F3F2;
+ border-collapse: collapse;
+}
 
 
 
