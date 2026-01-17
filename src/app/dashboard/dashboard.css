@@ -222,3 +222,72 @@
 }
 .fa-pencil:hover { color: #2196F3; cursor: pointer; }
 .fa-trash:hover { color: #F44336; cursor: pointer; }
+
+@media screen and (max-width: 390px) {
+    .top-nav {
+        height: auto;
+        flex-direction: column;
+    }
+     .logo-area {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    .stepper {
+        padding: 10px;
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+     .stepper .line {
+        display: none;
+     }
+      .main-body {
+        flex-direction: column;
+      }
+        .sidebar {
+        width: 100%;
+        height: auto;
+    }
+    
+    .filter-bar {
+        flex-direction: column;
+           align-items: stretch;
+    }
+       .filter-group input, 
+    .filter-group select {
+        width: 100%;
+    }
+     .btn-search {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .content-header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+
+}
+@media screen and (max-width: 1024px) {
+    .logo-area {
+        width: 200px; 
+    }
+    .sidebar {
+        width: 200px;
+    }
+     .stepper span {
+        font-size: 11px;
+     }
+      
+    .filter-bar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .data-table {
+        display: block;
+        overflow-x: auto; 
+    } 
+
+}
