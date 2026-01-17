@@ -194,6 +194,9 @@ display: flex;
     
    
 }
+.varlist{
+    display:flex;
+}
 .sidepanel1 ul{
     display:flex;
     flex-wrap: wrap;
@@ -295,6 +298,9 @@ border-radius :4px;
        .filter-group input, 
     .filter-group select {
         width: 100%;
+    }
+    .filter-group{
+        margin:2px;
     }
      .btn-search {
         width: 100%;

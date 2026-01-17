@@ -89,7 +89,32 @@
                                     <i class="fa" [ngClass]="isVarOpen ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
                                 </div>
                                 <ul class="nav-links" *ngIf="isVarOpen">
-                                    <li class="varlist">Variables List</li>
+                                    <li class="varlist">
+                                        <div class="filter-group">
+                                            <label>Name</label>
+                                            <input type="text" value="Var-1"><br>
+                                            <input type="text" value="Var-2">
+                                        </div><br>
+                                        <div class="filter-group">
+                                            <label>Default Value</label>
+                                            <input type="text" value="default 1"><br>
+                                            <input type="text" value="default 2">
+                                        </div><br>
+                                        <div class="filter-group">
+                                            <label>Required</label>
+                                            <select>
+                                                <option selected>Yes</option>
+                                                <option>No</option>
+                                            </select><br>
+                                            <select>
+                                                <option >Yes</option>
+                                                <option selected>No</option>
+                                            </select>
+                                     </div>
+
+                                       
+
+                                    </li>
                                 </ul>
                                 <div class="menu-group" [class.open]="isCommentsOpen"></div>
                                 <div class="item"  (click)="toggleComments()">
