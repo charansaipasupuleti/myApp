@@ -98,6 +98,19 @@ button:hover{
 a{
     text-decoration: none;
 }
+a:link{
+    color:#888;
+}
+a:hover {
+  color:#888;
+  cursor:pointer;
+}
+a:visited {
+  color:#888;
+}
+a:active {
+  color:#888;
+}
 .error-box {
     width:450px;
      margin-left:150px;
