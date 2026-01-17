@@ -127,7 +127,18 @@
 .nav-links li:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
+.filter-group{
+    margin-right:10px;
+}
+.filter-group label{
+    font-weight: bold;
+}
+.filter-group input,select{
+    margin-top:10px;
+    width:120px;
+    height:40px;
 
+}
 .content-wrapper {
 background-color:#F2F3F2;
 width:100vw;
@@ -299,10 +310,7 @@ border-radius :4px;
     .filter-group select {
         width: 100%;
     }
-    .filter-group{
-        margin:2px;
-    }
-     .btn-search {
+    tn-search {
         width: 100%;
         justify-content: center;
     }
